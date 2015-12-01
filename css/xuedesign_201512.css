@@ -1,9 +1,9 @@
 /**********************************************************************************************
 
-	Title: CSS for DGH MicroMovie Site
+	Title: CSS for MOTAC MicroMovie Site
 	Author: Elmo Wu (by xuedesign studio)
 	Author URL: http://www.xuedesign.tw/
-	Version: v1.0 (2015-08)
+	Version: v1.0 (2015/12)
 
 ***********************************************************************************************
 		1 通用
@@ -71,9 +71,9 @@ h1 a{
 	display:block;
 	position:absolute;
 	top:15px;
-	left:22px;
-	width:314px;
-	height:90px;
+	left:-1px;
+	width:186px;
+	height:77px;
 	background:url(../images/pic_h1.png) no-repeat;
 	text-indent:-9999px}
 
@@ -89,96 +89,112 @@ h1 a{
 	text-indent:-9999px}
 #box_content .movie-title-01{
 	background:url(../images/pic_h2-01.png) no-repeat;
-	width:388px;
-	height:264px;
-	top:280px;
-	/*bottom:10px;*/
-	right:35px}
+	width:446px;
+	height:89px;
+	top:120px;
+	left:35px;
+	z-index:99}
 #box_content .movie-title-02{
 	background:url(../images/pic_h2-02.png) no-repeat;
-	width:340px;
-	height:248px;
-	top:-80px;
-	right:130px}		
-#box_content h3{
+	width:456px;
+	height:349px;
+	top:-20px;
+	right:35px;
+	z-index:99}
+#box_safenote{
 	display:block;
 	position:absolute;
-	top:215px;
-	right:91px;
-	z-index:99;
-	width:302px;
-	height:35px;
+	top:-103px;
+	left:370px;
+	z-index:199;
+	width:500px;
+	min-height:510px}			
+#box_safenote h3{
+	display:block;
+	width:500px;
+	height:82px;
 	background:url(../images/pic_h3.png) no-repeat;
 	text-indent:-9999px}
-.btn_play-01 a{
+#box_safenote ol{ display:block; margin:0; padding:0}	
+#box_safenote li{
 	display:block;
-	position:absolute;
-	top:320px;
-	right:143px;
-	width:73px;
-	height:75px;
-	background:url(../images/btn_play.png) no-repeat;
 	text-indent:-9999px}
-.btn_play-01 a:hover{
-	background:url(../images/btn_play.png) 0 -75px no-repeat}
-.btn_play-02 a{
-	display:block;
-	position:absolute;
-	top:-70px;
-	right:215px;
-	width:73px;
-	height:75px;
-	background:url(../images/btn_play.png) 0 -150px no-repeat;
-	text-indent:-9999px}
-.btn_play-02 a:hover{
-	background:url(../images/btn_play.png) 0 -225px no-repeat}
-		
-#main-vision{
-	display:block;
-	position:absolute;
+.note_01{
+	width:125px;
+	height:94px;
+	background:url(../images/pic_safenote_01.png) no-repeat;
+	margin:0 0 37px 183px}
+.note_02{
+	width:149px;
+	height:67px;
+	background:url(../images/pic_safenote_02.png) no-repeat;
+	margin:0 0 35px 171px}	
+.note_03{
+	width:99px;
+	height:63px;
+	background:url(../images/pic_safenote_03.png) no-repeat;
+	margin:0 0 40px 196px}	
+.note_04{
+	width:273px;
+	height:63px;
+	background:url(../images/pic_safenote_04.png) no-repeat;
+	margin-left:109px}			
+
+#my_cloud, #my_tree, #my_bike, #my_moto{ display:block;	position:absolute}		
+#my_cloud{
+	top:-100px;
+	right:-26px;
+	background: url(../images/pic_cloud.png) no-repeat;
+	width:487px;
+	height:223px}	
+#my_tree{
 	bottom:0;
-	left:250px;
-	background: url(../images/pic_main-vision.png) no-repeat;
-	width:569px;
-	height:585px}	
-#truck{
-	display:block;
-	position:absolute;
+	left:-50px;
+	background:url(../images/pic_tree.png) no-repeat;
+	width:546px;
+	height:530px}
+#my_bike{
 	bottom:0;
-	left:50px;
-	background:url(../images/icon_truck.png) no-repeat;
-	width:79px;
-	height:44px}
+	left:203px;
+	background:url(../images/pic_bike.png) no-repeat;
+	width:159px;
+	height:203px}	
+#my_moto{
+	bottom:0;
+	right:64px;
+	background:url(../images/pic_moto.png) no-repeat;
+	width:213px;
+	height:210px}	
 		
 
 /* 2.3 首頁選單 */		
 #box_menu{
 	display:block;
-	position:relative}
-#box_menu ul{
-	display:block;
 	position:absolute;
-	top:75px;
-	left:10px;
-	width:131px}
+	bottom:30px;
+	left:431px;
+	width:378px;
+	height:98px}
+#box_menu ul{ display:block; margin:0; padding:0}
 #box_menu li a{
 	display: block;
-	width:131px;
-	height:46px;
+	float:left;
+	width:116px;
+	height:98px;
 	text-indent:-9999px;
 	background:url(../images/btn_nav.png) no-repeat;
-	margin: 30px 0;
-	border-bottom:1px dashed #FFFFFF}
+	margin:0 5px}
 #box_menu a.nav_01, #box_aside a.nav_01{ background-position: 0 0}
-#box_menu a.nav_01:hover, #box_aside a.nav_01:hover{ background-position: 0 -46px}
-#box_menu a.nav_02, #box_aside a.nav_02{ background-position: 0 -92px}
-#box_menu a.nav_02:hover, #box_aside a.nav_02:hover{ background-position: 0 -138px}
-#box_menu a.nav_03, #box_aside a.nav_03{ background-position: 0 -184px}
-#box_menu a.nav_03:hover, #box_aside a.nav_03:hover{ background-position: 0 -230px}
-#box_menu a.nav_04, #box_aside a.nav_04{ background-position: 0 -276px}
-#box_menu a.nav_04:hover, #box_aside a.nav_04:hover{ background-position: 0 -322px}
-#box_menu a.nav_05, #box_aside a.nav_05{ background-position: 0 -368px}
-#box_menu a.nav_05:hover, #box_aside a.nav_05:hover{ background-position: 0 -414px}	
+#box_menu a.nav_01:hover, #box_aside a.nav_01:hover{ background-position: 0 -98px}
+
+#box_menu a.nav_02, #box_aside a.nav_02{ background-position: -116px 0}
+#box_menu a.nav_02:hover, #box_aside a.nav_02:hover{ background-position: -116px -98px}
+
+#box_menu a.nav_03, #box_aside a.nav_03{ background-position: -232px 0}
+#box_menu a.nav_03:hover, #box_aside a.nav_03:hover{ background-position: -232px -98px}
+
+#box_menu a.nav_04, #box_aside a.nav_04{ background-position: -348px 0}
+#box_menu a.nav_04:hover, #box_aside a.nav_04:hover{ background-position: -348px -98px}
 
 /* 2.4 版權列 */					
 footer{
