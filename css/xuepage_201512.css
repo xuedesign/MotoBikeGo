@@ -10,8 +10,7 @@
 		2.內容頁
 		   2-1. 基本架構
 		   2-2. 精彩影片
-		   2-3. 行車懶人包
-		   2-4. 劇照花絮
+		   2-3. 劇照花絮
 ***********************************************************************************************/
 
 /* 1. 通用 
@@ -83,11 +82,11 @@ footer .txt_ad{
 	
 #box_container{
 	display:block;
-	position: absolute;
+	/*position: absolute;
 	top: 15px;
-    left: 50%;
+    left: 50%;*/
 	width:1238px;
-	margin: 0 0 0 -620px;
+	margin: 15px auto 0 auto;
 	-webkit-box-shadow: 0 0 20px #4E4E4E;
     -moz-box-shadow: 0 0 20px #4E4E4E;
     box-shadow: 0 0 20px #4E4E4E;
@@ -150,7 +149,7 @@ footer .txt_ad{
 #box_pageinfo{
 	display: block;
 	width:913px;
-	min-height:700px;
+	min-height:680px;
 	margin:0 auto;
 	background: url(../images/bg_pageinfo.png) repeat-y;
 	-webkit-border-radius: 15px 15px 0 0;
@@ -242,11 +241,31 @@ footer .txt_ad{
 #tab2{ display:none}	
 		
 /* 2.2 精彩影片*/	
-/* 2.3 行車懶人包*/	
-/* 2.4 劇照花絮 */	
-				 	 	
-			
-
+.film_link li a{
+	display:block;
+	float:left;
+	width:168px;
+	padding:8px 0;
+	margin:10px 10px 0;
+	background:#75bded;
+	font-size:.938em;
+	line-height:25px;
+	text-align:center;
+	letter-spacing:1px;
+	color:#FFF;
+	text-decoration:none;
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px}
+.film_link li a:hover{ background:#166FB4}	
+/* 2.3 劇照花絮 */	
+.list_photo{}
+.list_photo li{
+	display:block;
+	float:left;
+	width:100px;
+	height:100px;
+	margin:0 10px 15px}				 	 	
 
 
 /*新增動畫效果 #20150831*/	

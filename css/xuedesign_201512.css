@@ -45,12 +45,12 @@ image{border:0}
 	margin:0 auto}
 #box_index{
 	display:block;
-	position: absolute;
+	/*position: absolute;
 	top: 15px;
-    left: 50%;
+    left: 50%;*/
 	width:1238px;
 	background:url(../images/bg_index.png) repeat;
-	margin: 0 0 0 -620px;
+	margin: 15px auto 0 auto ;
 	-webkit-box-shadow: 0 0 20px #4E4E4E;
     -moz-box-shadow: 0 0 20px #4E4E4E;
     box-shadow: 0 0 20px #4E4E4E;
