@@ -81,7 +81,7 @@ h1 a{
 	width:1240px;
 	height:600px}
 #box_content .movie-title-01, #box_content .movie-title-02{ 
-    display:block; 
+    display: block; 
 	position:absolute;
 	text-indent:-9999px}
 #box_content .movie-title-01{
@@ -137,7 +137,7 @@ h1 a{
 	background:url(../images/pic_safenote_04.png) no-repeat;
 	margin-left:109px}			
 
-#my_cloud, #my_tree, #my_bike, #my_moto{ display:block;	position:absolute}		
+#my_cloud, #my_tree, #my_bike, #my_moto{ display:block;	position:absolute; z-index:1}		
 #my_cloud{
 	top:-100px;
 	right:-26px;
@@ -218,7 +218,7 @@ footer .txt_ad{
 	background:url(../images/pic_ad.png) no-repeat;
 	text-indent:-9999px}
 
-/*新增動畫效果 #20150827*/
+/*新增動畫效果 #20151103*/
 .animated {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -230,7 +230,10 @@ footer .txt_ad{
 .animated.hinge {
   -webkit-animation-duration: 2s;
           animation-duration: 2s}
-.box_ani-01{
+.ani-title01{
+	display:block;
+	position:absolute;
+	z-index:99;
 	-webkit-animation-delay:1s;
 	animation-delay:1s;
 	-webkit-animation-duration: 2s;
@@ -239,7 +242,14 @@ footer .txt_ad{
     -webkit-animation-name: zoomIn;
     -moz-animation-name: zoomIn;
     animation-name: zoomIn}
-.box_ani-02{
+.ani-title02{
+	display:block;
+	position:absolute;
+	top:-20px;
+	right:35px;
+	z-index:99;
+	-webkit-animation-delay:2s;
+	animation-delay:2s;
 	-webkit-animation-duration: 2s;
     -moz-animation-duration: 2s;
 	animation-duration: 2s;
@@ -248,96 +258,125 @@ footer .txt_ad{
     animation-name: zoomIn}	
 @-webkit-keyframes zoomIn {
   from {
-    opacity: 0;
+	opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
+    transform: scale3d(.3, .3, .3)}
+  50% {opacity: 1}
 }
 
 @keyframes zoomIn {
   from {
-    opacity: 0;
+	opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)}
+  50% { opacity: 1}
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 
   50% {
-    opacity: 1;
-  }
-}
-
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
   }
 
   to {
-    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 
-@keyframes fadeIn {
+@keyframes pulse {
   from {
-    opacity: 0;
-  }
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)}
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05)}
 
   to {
-    opacity: 1;
-  }
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)}
 }
 
-.fadeIn {
-	-webkit-animation-delay:2s;
-	animation-delay:2s;
-	-webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-	animation-duration: 1s;
-    -webkit-animation-name: fadeIn;
-    -moz-animation-name: fadeIn;
-    animation-name: fadeIn}
-	
-@keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
+.pulse {
+  -webkit-animation-delay:4s;
+	animation-delay:4s;	
+  -webkit-animation-name: pulse;
+  animation-name: pulse}
+  
+@-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0)}
   to {
+    opacity: 1;
     -webkit-transform: none;
-    transform: none;
-  }
+    transform: none}
 }
 
-.bounceInRight {
-  -webkit-animation-delay:2s;
-  animation-delay:2s;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
-}							
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+.fadeInDown-01{
+  -webkit-animation-delay:5s;
+  animation-delay:5s;	
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown}
+.fadeInDown-02{
+  -webkit-animation-delay:6s;
+  animation-delay:6s;	
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown}
+.fadeInDown-03{
+  -webkit-animation-delay:7s;
+  animation-delay:7s;	
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown}
+.fadeInDown-04{
+  -webkit-animation-delay:8s;
+  animation-delay:8s;	
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+
+.fadeInUp {
+  -webkit-animation-delay:9s;
+  animation-delay:9s;		
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp}        
+   
+						

@@ -186,7 +186,7 @@ footer .txt_ad{
 	display:block;
 	position:absolute;
 	bottom:-3px;
-	left:-100px;
+	left:-150px;
 	background:url(../images/pic_moto-s.png) no-repeat;
 	width:132px;
 	height:131px}	
@@ -268,7 +268,7 @@ footer .txt_ad{
 	margin:0 10px 15px}				 	 	
 
 
-/*新增動畫效果 #20150831*/	
+/*新增動畫效果 #20151203*/	
 .animated {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -280,29 +280,78 @@ footer .txt_ad{
 .animated.hinge {
   -webkit-animation-duration: 2s;
           animation-duration: 2s}
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
-  }
-
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0)}
   to {
     opacity: 1;
-  }
+    -webkit-transform: none;
+    transform: none}
 }
 
-@keyframes fadeIn {
+@keyframes fadeInDown {
   from {
     opacity: 0;
-  }
-
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0)}
   to {
     opacity: 1;
-  }
+    -webkit-transform: none;
+    transform: none}
+}
+.fadeInDown{
+  -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+	animation-duration: 2s;	
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown}
+
+@-webkit-keyframes fadeInRight {
+  from {
+	display:block;
+    position:absolute;
+    bottom:-3px;
+    left:80px;  
+    opacity: 0;
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0)}
+  to {
+	display:block;
+    position:absolute;
+    bottom:-3px;
+    left:-150px;   
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
 }
 
-.fadeIn {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;	
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}						
+@keyframes fadeInRight {
+  from {
+    display:block;
+    position:absolute;
+    bottom:-3px;
+    left:80px; 	  
+    opacity: 0;
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0)}
+  to {
+	display:block;
+    position:absolute;
+    bottom:-3px;
+    left:-150px;   
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+
+.fadeInRight { 
+  
+  -webkit-animation-delay:1s;
+	animation-delay:1s;	
+  -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+	animation-duration: 3s;		
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight}   						
