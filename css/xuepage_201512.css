@@ -314,7 +314,7 @@ footer .txt_ad{
     position:absolute;
     bottom:-3px;
     left:80px;  
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translate3d(50%, 0, 0);
     transform: translate3d(50%, 0, 0)}
   to {
@@ -333,7 +333,7 @@ footer .txt_ad{
     position:absolute;
     bottom:-3px;
     left:80px; 	  
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translate3d(50%, 0, 0);
     transform: translate3d(50%, 0, 0)}
   to {
