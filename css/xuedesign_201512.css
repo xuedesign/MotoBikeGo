@@ -234,8 +234,8 @@ footer .txt_ad{
 	display:block;
 	position:absolute;
 	z-index:99;
-	-webkit-animation-delay:1s;
-	animation-delay:1s;
+	-webkit-animation-delay:2s;
+	animation-delay:2s;
 	-webkit-animation-duration: 2s;
     -moz-animation-duration: 2s;
 	animation-duration: 2s;
@@ -248,8 +248,8 @@ footer .txt_ad{
 	top:-20px;
 	right:35px;
 	z-index:99;
-	-webkit-animation-delay:2s;
-	animation-delay:2s;
+	-webkit-animation-delay:3s;
+	animation-delay:3s;
 	-webkit-animation-duration: 2s;
     -moz-animation-duration: 2s;
 	animation-duration: 2s;
@@ -304,8 +304,8 @@ footer .txt_ad{
 }
 
 .pulse {
-  -webkit-animation-delay:4s;
-	animation-delay:4s;	
+  -webkit-animation-delay:5s;
+	animation-delay:5s;	
   -webkit-animation-name: pulse;
   animation-name: pulse}
   
@@ -331,23 +331,23 @@ footer .txt_ad{
     transform: none}
 }
 .fadeInDown-01{
-  -webkit-animation-delay:5s;
-  animation-delay:5s;	
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown}
-.fadeInDown-02{
   -webkit-animation-delay:6s;
   animation-delay:6s;	
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown}
-.fadeInDown-03{
+.fadeInDown-02{
   -webkit-animation-delay:7s;
   animation-delay:7s;	
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown}
-.fadeInDown-04{
+.fadeInDown-03{
   -webkit-animation-delay:8s;
   animation-delay:8s;	
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown}
+.fadeInDown-04{
+  -webkit-animation-delay:9s;
+  animation-delay:9s;	
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown}
 
@@ -374,8 +374,8 @@ footer .txt_ad{
 }
 
 .fadeInUp {
-  -webkit-animation-delay:9s;
-  animation-delay:9s;		
+  -webkit-animation-delay:10s;
+  animation-delay:10s;		
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp}        
    
